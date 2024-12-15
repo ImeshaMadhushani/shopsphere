@@ -11,6 +11,7 @@ import ProceedOrder from './pages/ProceedOrder';
 import Category from './pages/Category';
 import AllProducts from './pages/AllProducts'
 import { CartProvider } from './contexts/CartContext';
+import AdminPanel from './pages/AdminPanel';
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
             <Route path="/auth" element={<Auth/>} />
             <Route path="/proceed-order" element={<ProceedOrder/>} />
             <Route path="/category/:categoryName" element={<Category />} />
-            <Route path="/all-products" element={<AllProducts/>} />
+              <Route path="/all-products" element={<AllProducts />} />
+              <Route path='/admin' element={<AdminPanel/>} />
           </Routes>
         </main>
         <Footer />
